@@ -23,7 +23,7 @@
   - name: Start mysql
     service:
       name: mysql
-      state: started    
+      state: started
 
   - name: Install PostgreSQL
     apt:
@@ -33,27 +33,20 @@
   - name: start postgresql
     service:
       name: postgresql
-      state: started      
+      state: started
       
   - name: Install Tomcat
     apt:
-      name: tomcat9
+      name: tomcat
       state: present
 
   - name: start tomcat
     service:
-      name: tomcat9
+      name: tomcat
       state: started
 
   - name: Install Git
     apt:
       name: git
       state: present
-      
-      
-  
-      
-
-      
-
       
